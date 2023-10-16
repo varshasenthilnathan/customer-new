@@ -1,0 +1,39 @@
+<p>customer works!</p>
+<input type="text" placeholder="firstname"[(ngModel)]='firstname'>
+<input type="text" placeholder="lastname"[(ngModel)]='lastname'>
+<input type="text" name="" id=""  placeholder="email"[(ngModel)]='email'>
+<input type="text" name="" id=""  placeholder="phone"[(ngModel)]='phone'>
+<input type="text" placeholder="userId"[(ngModel)]='userId'>
+<input type="text" name="" id=""  placeholder="password"[(ngModel)]='password'>
+
+
+<a routerLink="/customer">Customer</a>
+<button (click)="createUsers()" >test</button>
+<button (click)="getAvailablePets()" >Get Available Pets</button>
+
+
+
+
+<!--<div>
+  <ul *ngFor="let item of availablePetList">
+    <li [ngStyle]="{'color': 'green'}"> {{ item.name }} ({{ item.status}}) 
+    </li>
+  </ul>
+</div>--->
+
+
+<!---<div *ngIf="availablePetList.length > 3">
+  it is accepted,since we have accepted the minimum content
+  
+  </div>--->
+
+
+
+  <!--<div [ngClass]="{'navlstyle':availablePetList=='item.name,, 'avlstyle':availablePetList=='item.status'}">
+    {{item.name}}  ({{item.status}})
+  </div>-->
+ 
+
+
+
+<router-outlet></router-outlet>
