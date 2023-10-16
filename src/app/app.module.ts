@@ -8,6 +8,7 @@ import {HttpClientModule} from "@angular/common/http"
 import { CommonServiceTsService } from './common.service.ts.service';
 import { CustomerComponent } from './customer/customer.component';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     CommonServiceTsService
